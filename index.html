@@ -4,17 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <title></title>
+    <style>
+    .mySlides {display:none;}
+    </style>
   </head>
   <body>
-    <img width="75%" src="hot paper.jpg" alt="paper">
-    <h1>Munder Difflin</h1>
 
-
-
-    <section>
-      <h2>Who We Are</h2>
-
-      <p align="center">Munder Difflin is a provider of quality papers. We pride ourselves on our ability to provide a product with a rich history dating back millenia. </p>
+    <h1>Munder Difflin Papers</h1>
+    <!-- <img width= "100%" src="passion.jpg" alt="passion"> -->
+    <section class="pleaseScroll">
 
       <h2>It all started in China.</h2>
       <br>
@@ -25,28 +23,58 @@
       <br>
       The word "paper" is etymologically derived from Latin papyrus, which comes from the Greek πάπυρος (papuros), the word for the Cyperus papyrus plant. Papyrus is a thick, paper-like material produced from the pith of the Cyperus papyrus plant, which was used in ancient Egypt and other Mediterranean cultures for writing before the introduction of paper into the Middle East and Europe. Although the word paper is etymologically derived from papyrus, the two are produced very differently and the development of the first is distinct from the development of the second. Papyrus is a lamination of natural plant fibres, while paper is manufactured from fibres whose properties have been changed by maceration.</p>
     </section>
+
+        <section>
+
+        <h2>Who We Are</h2>
+        <p align="center">Munder Difflin is a provider of quality papers. We pride ourselves on our ability to provide a product with a rich history dating back millenia. </p>
+      </section>
+
     <section>
       <h2>Show Us Your Paper!</h2>
     <img class= "center" width="10%" src="gram.png" alt="gram">
 
 
       <br>
+      <div class="container">
+        <div align= "center">
+      <img class="mySlides" width= "50%" src="holding paper.jpg" alt="behold the paper">
+      <img  class="mySlides" width= "50%" src="holds.jpg" alt="all hold the paper">
+      </div>
+      <div align= "center">
+      <img   align="center" class="mySlides" width= "50%" src="holds2.jpg" alt="holds2">
+      <img class="mySlides" width= "50%" src="holds3.jpg" alt="holds3">
+      </div>
+      <div align= "center">
+        <img class="mySlides" width= "50%" src="hold it.jpg" alt="hold the paper">
 
-      <div class="mySlides">
-        <div>
-      <img width= "50%" src="holding paper.jpg" alt="behold the paper">
-      <img width= "50%" src="holds.jpg" alt="all hold the paper">
-      </div>
-      <div>
-      <img width= "50%" src="hold it.jpg" alt="hold the paper">
-      <img width= "50%" src="holds2.jpg" alt="holds2">
-      <img width= "50%" src="holds3.jpg" alt="holds3">
       </div>
       </div>
+
     </section>
+
+
+
     <section>
-      <h3>Order Now</h3>
+      <h3 id= "clickhere" align="center" button onclick= "clickhere">Order Now!</h3>
     </section>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+    }
+    </script>
 
     <script type="text/javascript" src= "main.js">
     </script>

@@ -3,10 +3,19 @@
   100% { opacity: 1; }
 }
 
+@keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#clickhere {
+  
+}
 
 body {
   background-color: #CC8B86;
   color: #F9EAE1;
+  margin: 20px;
 }
 
 h1 {
@@ -22,7 +31,7 @@ h1 {
 .mySlides {
   text-align: center;
   animation: slideshow1 5s;
-  display: block;
+  display: inline-block;
 
 
 }
@@ -40,11 +49,15 @@ h2 {
   margin-right: 50%;
 }
 
+.newcenter{
 
+  margin-left: 25%;
+  margin-right: 50%;
+  background-color:#EBBAB9 ;
+}
 
 .container{
-  float:right;
-  text-align: right;
+  background-color: #EBBAB9;
 
 }
 
@@ -56,7 +69,8 @@ h2 {
     display: inline-grid;
     width: 180px;
     max-height: 100px;
-
+    text-align: center;
+    align: center;
 
 }
 div.gallery:hover {
@@ -74,3 +88,12 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+/* scroll help */
+.pleaseScroll {
+    animation: appear 5s;
+
+}
+
+
+ /* end scroll help */
