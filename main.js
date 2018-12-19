@@ -45,13 +45,22 @@ function carousel() {
     setTimeout(carousel, 2000);
 
     carousel ();
-
-// now, for the button
-document.getElementById("clickhere").onclick = function() {myFunction()};
-
-function myFunction() {
-  document.getElementById("clickhere").innerHTML = "YOU CLICKED ME!";
-
 }
+// now, for the button
 
-    }
+function youClicked(){
+  alert("Order Placed!");
+}
+// let leClick=document.getElementById("clickhere").addEventListener("click", myFunction);
+//
+// function myFunction() {
+//   if {leClick alert("Order Placed!");
+//
+// }
+
+// document.getElementById("clickhere").addEventListener("click",youClicked())
+//
+//
+//  function youClicked () {
+//    alert("Order Placed!");
+// }​
